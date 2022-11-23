@@ -16,7 +16,7 @@ parser.add_argument("--domain", "-d", type=str, required=False, help= 'file of a
 parser.add_argument("--output", "-o", type=str, required=False, help='output file path')
 args = parser.parse_args()
 if not (args.domain):
-    parser.error('No input selected: Please add --url')
+    parser.error('No input selected: Please add --domain or -d')
 
 
 
