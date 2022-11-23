@@ -69,7 +69,7 @@ def Process():
     for domain in all_subdomains:
         print(domain)      
 
-if 'code' in json_data['error']:
+if 'error' in json_data:
     if str(json_data['error']['message']).find('reCAPTCHA') > 0:
         print('Too mant requests please change ip address')
     print(json_data['error']['message'])
